@@ -6,4 +6,6 @@ Chicken Fry
 pasta 
 soft drink
 
+hotdog
+
 Thank you
