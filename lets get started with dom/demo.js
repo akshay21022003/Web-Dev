@@ -11,13 +11,18 @@
 // console.log(document.links)
 // console.log(document.images)
 
-var x = document.getElementById('header-title')
-var header = document.getElementById('main-header')
+// var x = document.getElementById('header-title')
+// var header = document.getElementById('main-header')
 // console.log(x);
 // x.textContent= 'hello';
 // x.innerHTML= 'GoodBye';
 // console.log(x.textContent)
 // console.log(x.innerText) // pays attention to style as i add display none for 123 in css
 
-header.style.borderBottom = 'solid 3px #000'
+// header.style.borderBottom = 'solid 3px #000'
 
+var items = document.getElementsByClassName('list-group-item');
+items[2].style.backgroundColor = 'green'
+for(var i=0;i<items.length;i++){
+    items[i].style.fontWeight = 'bold'
+}
