@@ -52,6 +52,18 @@ function displayUsers() {
   });
 }
 
+function editUser(index) {
+  let users = JSON.parse(localStorage.getItem('users')) || [];
+  const user = users[index];
+  document.getElementById('name').value = user.name;
+  document.getElementById('email').value = user.email;
+  users.splice(index, 1);
+  
+  localStorage.setItem('users', JSON.stringify(users));
+  
+  displayUsers();
+}
+
 function deleteUser(index) {
   let users = JSON.parse(localStorage.getItem('users')) || [];
   
@@ -61,6 +73,5 @@ function deleteUser(index) {
   
   displayUsers();
 }
-
 
 displayUsers();
